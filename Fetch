@@ -1,0 +1,7 @@
+fetch("http://wttr.in/Fukuoka?format=j1")
+  .then(function (res) {
+    console.log(res); // => Response
+    return res.json();
+  }).then(function (json) {
+    console.log(json); // => json
+  })
