@@ -1,0 +1,8 @@
+async function get_data() {
+  const a = await fetch("http://wttr.in/Fukuoka?format=j1");
+  console.log(a); // => Response
+  const b = await a.json();
+  console.log(b); // => json
+}
+
+get_data();
