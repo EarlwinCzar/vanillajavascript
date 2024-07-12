@@ -1,0 +1,14 @@
+function brew(coffeeMaker, coffeeType) {
+return coffeeMaker(coffeeType);
+}
+
+function makeAmericano(coffeeAmount) {
+return `Brewing ${coffeeAmount} ml of Americano...`;
+}
+
+function makeLatte(coffeeAmount) {
+return `Steaming ${coffeeAmount} ml of milk for Latte...`;
+}
+
+const result1 = brew(makeAmericano, 200); // returns "Brewing 200 ml of Americano..."
+const result2 = brew(makeLatte, 300); // returns "Steaming 300 ml of milk for Latte..."
