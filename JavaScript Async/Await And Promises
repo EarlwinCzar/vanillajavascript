@@ -1,0 +1,14 @@
+async function prepareCoffee() {
+try {
+const beans = await fetch('https://example.com/api/beans');
+const groundBeans = await grindBeans(beans);
+const brewedCoffee = await brewCoffee(groundBeans);
+
+return brewedCoffee;
+} catch (error) {
+console.error(error);
+}
+}
+
+const myCoffee = prepareCoffee();
+console.log(myCoffee);
