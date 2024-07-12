@@ -1,0 +1,11 @@
+function weightDisplayer(someWeight) {
+document.getElementById("display").innerHTML = someWeight + " grams";
+}
+
+function calculateTotalWeight(arabicaWeight, robustaWeight, myCallback) {
+let totalWeight = arabicaWeight + robustaWeight;
+myCallback(totalWeight);
+}
+
+// Calculate the total weight of 500 grams of Arabica and 250 grams of Robusta coffee beans
+calculateTotalWeight(500, 250, weightDisplayer);
