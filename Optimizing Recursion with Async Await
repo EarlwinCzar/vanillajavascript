@@ -1,0 +1,13 @@
+// Async recursive search function
+async function asyncRecursiveSearch(nodes) {
+ for (const node of nodes) {
+ await asyncProcess(node);
+ if (node.children) {
+ await asyncRecursiveSearch(node.children);
+ }
+ }
+}
+// Example
+async function asyncProcess(node) {
+ // Asynchronous processing logic for nodes
+}
