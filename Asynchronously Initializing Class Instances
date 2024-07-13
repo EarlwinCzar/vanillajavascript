@@ -1,0 +1,13 @@
+class Example {
+ constructor(data) {
+ this.data = data;
+ }
+static async create() {
+ const data = await fetchData(); // Asynchronously fetch data
+ return new Example(data);
+ }
+}
+// Usage
+Example.create().then((exampleInstance) => {
+ // Use the asynchronously initialized class instance
+});
