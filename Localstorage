@@ -1,0 +1,19 @@
+const products = {
+  name: "cement",
+  price: 0,
+};
+
+//localstorage only store strings
+//when using the setters, use JSON.stringify
+
+//setters with stringify
+localStorage.setItem("products", JSON.stringify(products));
+//get stringed value
+const get = localStorage.getItem("products");
+
+console.log(get);
+
+//convert back to object use JSON.parse
+const convert = JSON.parse(localStorage.getItem("products"));
+
+console.log(convert);
