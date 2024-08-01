@@ -1,0 +1,8 @@
+var coffeeBlend;
+console.log(coffeeBlend);
+coffeeBlend = "Dark Roast";
+
+function brewCoffee() {
+    console.log("Brewing a fresh pot of coffee!");
+}
+brewCoffee();
