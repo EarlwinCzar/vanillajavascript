@@ -1,0 +1,11 @@
+app.get('/', (req, res, next) => {
+  // do some sync stuff
+  queryDb()
+    .then((data) => makeCsv(data)) // handle data
+    .then((csv) => { /* handle csv */ })
+    .catch(next)
+})
+
+app.use((err, req, res, next) => {
+  // handle error
+})
