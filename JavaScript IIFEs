@@ -1,0 +1,5 @@
+
+(function(coffeeType) {
+console.log("Brewing a fresh pot of " + coffeeType + " coffee!");
+})("French roast");
+// Output: "Brewing a fresh pot of French roast coffee!"
