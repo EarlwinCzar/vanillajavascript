@@ -1,0 +1,13 @@
+(function IIFE_initGame() {
+    // Private variables that no one has access to outside this IIFE
+    var lives;
+    var weapons;
+    
+    init();
+
+    // Private function that no one has access to outside this IIFE
+    function init() {
+        lives = 5;
+        weapons = 10;
+    }
+}());
